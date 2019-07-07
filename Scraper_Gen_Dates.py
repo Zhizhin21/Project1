@@ -2,8 +2,8 @@ import twint
 from multiprocessing import Pool
 def twitter_search(date):
 	c = twint.Config()
-	words = ["Brexit", 'Eureferendum', 'EUreferendum', 'EU Referendum', 'brexit', 'Euref', 'BREXIT']
-	c.Search = words 
+	#words = ["Brexit", 'Eureferendum', 'EUreferendum', 'EU Referendum', 'brexit', 'Euref', 'BREXIT']
+	c.Search = "Brexit" or 'Eureferendum' or 'EUreferendum' or 'EU Referendum' or 'brexit' or 'Euref' or 'BREXIT'
 	c.Store_csv = True
 	c.Since = "2016-06-2{}".format(date)
 	c.Until = "2016-06-2{}".format(date+1)
