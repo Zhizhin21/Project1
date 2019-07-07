@@ -8,7 +8,7 @@ def twitter_search(word):
 	c.Until = "2016-06-27"
 	c.Format = '| Date: {date} | Time: {time} |'
 	#"Tweet id: {id} | Date: {date} | Time: {time} | Username: {username} | User_id: {user_id} | Tweet: {tweet} | Hashtags: {hashtags} | Replies: {replies} | Retweets: {retweets} | Likes: {likes} | Location: {location}"
-	c.Output = "brexit_results_{}.csv".format(word)
+	c.Output = "bx_results_test.csv".format(word)
 	c.Location = True
 	twint.run.Search(c)
 
