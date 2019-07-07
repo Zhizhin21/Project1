@@ -4,8 +4,8 @@ def twitter_search(word):
 	c = twint.Config()
 	c.Search = word
 	c.Store_csv = True
-	c.Since = "2016-06-21"
-	c.Until = "2016-06-27"
+	c.Since = "2016-06-24"
+	c.Until = "2016-06-25"
 	c.Format = '| Date: {date} | Time: {time} |'
 	#"Tweet id: {id} | Date: {date} | Time: {time} | Username: {username} | User_id: {user_id} | Tweet: {tweet} | Hashtags: {hashtags} | Replies: {replies} | Retweets: {retweets} | Likes: {likes} | Location: {location}"
 	c.Output = "bx_results_test.csv".format(word)
